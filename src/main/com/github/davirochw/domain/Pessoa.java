@@ -8,7 +8,23 @@ public abstract class Pessoa {
     private String cidade;
     private String estado;
     private String cep;
-    private String curso;
+    private String bootcamp;
+    private String dataNascimento;
+
+    protected Pessoa(String nome, String telefone, String email, String dataNascimento) {
+        this.nome = nome;
+        this.telefone = telefone;
+        this.email = email;
+        this.dataNascimento = dataNascimento;
+    }
+
+    protected Pessoa() {
+
+    }
+
+    protected Pessoa(String nome) {
+        this.nome = nome;
+    }
 
     public String getNome() {
         return nome;
@@ -66,11 +82,19 @@ public abstract class Pessoa {
         this.cep = cep;
     }
 
-    public String getCurso() {
-        return curso;
+    public String getBootcamp() {
+        return bootcamp;
     }
 
-    public void setCurso(String curso) {
-        this.curso = curso;
+    public void setBootcamp(String bootcamp) {
+        this.bootcamp = bootcamp;
+    }
+
+    public String getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(String dataNascimento) {
+        this.dataNascimento = dataNascimento;
     }
 }

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c748bda-2770-4a14-abc7-c3312d0fb979" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/github/davirochw/domain/Aluno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/github/davirochw/domain/Conteudo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/github/davirochw/domain/Curso.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/github/davirochw/domain/Instrutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/github/davirochw/domain/Mentoria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/github/davirochw/domain/Pessoa.java" afterDir="false" />
+    <list default="true" id="3c748bda-2770-4a14-abc7-c3312d0fb979" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/src/main/com/github/davirochw/domain/Bootcamp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/github/davirochw/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/github/davirochw/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/github/davirochw/domain/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/github/davirochw/domain/Aluno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/github/davirochw/domain/Conteudo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/github/davirochw/domain/Conteudo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/github/davirochw/domain/Curso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/github/davirochw/domain/Curso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/github/davirochw/domain/Instrutor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/github/davirochw/domain/Mentoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/github/davirochw/domain/Mentoria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/github/davirochw/domain/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/github/davirochw/domain/Pessoa.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +41,27 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.com.github.davirochw.Main" />
+      <module name="extraindo-cursos" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.com.github.davirochw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -51,6 +72,14 @@
       <option name="presentableId" value="Default" />
       <updated>1644634737833</updated>
     </task>
+    <task id="LOCAL-00001" summary="cria classes">
+      <created>1644638701364</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1644638701364</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -63,5 +92,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="cria classes" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>

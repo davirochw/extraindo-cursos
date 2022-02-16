@@ -4,17 +4,12 @@ public abstract class Conteudo {
 
     private String titulo;
     private String descricao;
-    private String instrutor;
     private int cargaHoraria;
     private int quantidadeAlunos;
 
-    public String getInstrutor() {
-        return instrutor;
-    }
+    protected static final double XP_PADRAO = 20d;
 
-    public void setInstrutor(String instrutor) {
-        this.instrutor = instrutor;
-    }
+    public abstract double calcularXp();
 
     public int getCargaHoraria() {
         return cargaHoraria;

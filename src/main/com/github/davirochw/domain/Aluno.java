@@ -1,31 +1,55 @@
 package main.com.github.davirochw.domain;
 
 import java.util.LinkedHashSet;
+import java.util.Optional;
 import java.util.Set;
 
 public class Aluno extends Pessoa {
 
-    private int matricula;
-    private Set<Curso> cursosInscritos = new LinkedHashSet<>();
-    private Set<Curso> cursosConcluidos = new LinkedHashSet<>();
+    private Set<Conteudo> conteudosInscritos = new LinkedHashSet<>();
+    private Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();
 
-    public void inscreverCurso(Curso curso) {
-        cursosInscritos.add(curso);
-        curso.getAlunosInscritos().add(this);
+    public Aluno(String nome, String telefone, String email, String dataNascimento) {
+        super(nome, telefone, email, dataNascimento);
     }
 
-    public int getMatricula() {
-        return matricula;
+    public Aluno(String nome) {
+        super(nome);
     }
 
-    public void setMatricula(int matricula) {
-        this.matricula = matricula;
+    public Set<Conteudo> getConteudosInscritos() {
+        return conteudosInscritos;
     }
 
-    @Override
-    public String toString() {
-        return " Aluno: " + getNome() +
-                " Matricula: " + matricula +
-                " Cuso: " + getCurso();
+    public void setConteudosInscritos(Set<Conteudo> conteudosInscritos) {
+        this.conteudosInscritos = conteudosInscritos;
     }
+
+    public Set<Conteudo> getConteudosConcluidos() {
+        return conteudosConcluidos;
+    }
+
+    public void setConteudosConcluidos(Set<Conteudo> conteudosConcluidos) {
+        this.conteudosConcluidos = conteudosConcluidos;
+    }
+
+    public void inscreverBootcamp(Bootcamp bootcamp) {
+        this.conteudosInscritos.addAll(bootcamp.getConteudos());
+        bootcamp.getAlunosInscritos().add(this);
+    }
+
+    public void progredir() {
+        Optional<Conteudo> conteudo = this.conteudosInscritos.stream().findFirst();
+        if (conteudo.isPresent()) {
+            this.conteudosConcluidos.add(conteudo.get());
+            this.conteudosInscritos.remove(conteudo.get());
+        } else {
+            System.err.println("Você não está matrículado em nenhum conteúdo!");
+        }
+    }
+
+    public double calcularTotalXp() {
+        return this.conteudosConcluidos.stream().mapToDouble(Conteudo::calcularXp).sum();
+    }
+
 }

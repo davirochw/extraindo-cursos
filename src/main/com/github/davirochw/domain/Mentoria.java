@@ -16,12 +16,15 @@ public class Mentoria extends Conteudo {
 
     @Override
     public String toString() {
-        return "Mentoria -" +
-                " Título: " + getTitulo() +
-                " Descrição: " + getDescricao() +
-                " Data: " + data +
-                " Carga horária: " + getCargaHoraria() +
-                " Quantidade de alunos: " + getQuantidadeAlunos() +
-                " Instrutor: " + getInstrutor();
+        return "Mentoria{" +
+                "Título=" + getTitulo() +
+                "; Descrição=" + getDescricao() +
+                "; Dsata=" + data +
+                '}';
+    }
+
+    @Override
+    public double calcularXp() {
+        return XP_PADRAO + 20d;
     }
 }
